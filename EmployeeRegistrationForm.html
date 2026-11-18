@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+
+<body bgcolor="lightyellow">
+   
+
+    <h1>Student Registration</h1>
+
+    <form action="/register" method="POST">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name"
+               name="name" required>
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email"
+               name="email" required>
+
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password"
+               name="password"
+               minlength="8" required>
+
+        <br><br>
+        <label>preferred interview time:</label>
+        <input type="time" name="interview_time">
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age"
+               name="age" min="16" max="60">
+
+        <br><br>
+        <label>Department:</label>
+
+       <select name="depatment" id="department">
+              <option value="CSE">CSE</option>
+              <option value="ECE">ECE</option>
+              <option value="CSIT">CS&amp;IT</option>
+       </select>
+
+       <br><br>
+
+
+       <label></label>
+       <label>choose file:</label>
+       <input type="file" name="file_upload">
+
+       <br><br>
+
+
+       <label for="skills">Skills:</label>
+       <input type="checkbox" name="skills">HTML
+       <input type="checkbox" name="skills">CSS
+       <input type="checkbox" name="skills">JavaScript
+
+       <br><br>
+
+
+       <label for="gender">Gender:</label>
+       
+       <input type="radio" name="gender"  >MALE
+       <input type="radio" name="gender" >Female
+        <br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date"  >
+        <br><br>
+
+
+        <address >Address:</address>
+        <textarea rows="4" cols="50"></textarea>
+        <br><br>
+
+
+        <label>Working Experience:</label>
+        <input type= "range" min="0" max="25">
+        <br><br>
+
+        
+        <label>LinkedIN Profile:</label>
+        <input type="url" name="Skibidi">
+        <br><br>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
+</html>
